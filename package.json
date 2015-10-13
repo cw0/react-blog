@@ -1,0 +1,23 @@
+{
+  "name": "react-blog",
+  "version": "1.0.0",
+  "description": "A basic blog website to learn react with",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cw0/react-blog.git"
+  },
+  "keywords": [
+    "react",
+    "blog"
+  ],
+  "author": "Christopher Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cw0/react-blog/issues"
+  },
+  "homepage": "https://github.com/cw0/react-blog#readme"
+}

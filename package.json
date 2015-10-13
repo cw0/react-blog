@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/cw0/react-blog/issues"
   },
-  "homepage": "https://github.com/cw0/react-blog#readme"
+  "homepage": "https://github.com/cw0/react-blog#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }

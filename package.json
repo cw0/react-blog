@@ -22,5 +22,8 @@
   "homepage": "https://github.com/cw0/react-blog#readme",
   "devDependencies": {
     "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "react": "^0.14.0"
   }
 }

@@ -4,7 +4,10 @@
   "description": "A basic blog website to learn react with",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "watchify app.js -o public/js/bundle.js -v",
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js",
+    "build": "npm run browserify ",
+    "start": "npm run watch & nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +24,24 @@
   },
   "homepage": "https://github.com/cw0/react-blog#readme",
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "browserify": "^11.2.0",
+    "nodemon": "^1.7.1",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.5.0",
+    "watchify": "^3.4.0"
   },
   "dependencies": {
-    "react": "^0.14.0"
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "mongoose": "^4.1.11",
+    "node-jsx": "^0.13.3",
+    "ntwitter": "^0.5.0",
+    "react": "^0.14.0",
+    "socket.io": "^1.3.7"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
   }
 }
